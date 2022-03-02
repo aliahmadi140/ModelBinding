@@ -1,0 +1,10 @@
+﻿@page
+@model ModelBinding.Pages.ResultModel
+@{
+}
+
+@if (TempData["Animal"] != null)
+{
+    <p>Animal Selected:</p>
+    <p>@TempData["Animal"]</p>
+}

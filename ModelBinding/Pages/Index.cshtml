@@ -1,0 +1,17 @@
+﻿@page 
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+
+    <select asp-for="Animal" class="form-select">
+        <option value="Cow">Cow</option>
+        <option value="Cat">Cat</option>
+        <option value="Dog">Dog</option>
+        <option value="Lion">Lion</option>
+    </select>
+
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
