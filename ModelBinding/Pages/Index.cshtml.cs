@@ -12,12 +12,12 @@ namespace ModelBinding.Pages
             _logger = logger;
         }
         [BindProperty]
-        public string Animal { get; set; }
+        public IList<string> Animal { get; set; }
 
 
        public IActionResult OnPost()
         {
-            TempData["Animal"]= Animal;
+            TempData["Animals"]= Animal;
             return RedirectToPage("./Result");
         }
     }

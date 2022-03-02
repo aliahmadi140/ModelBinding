@@ -3,8 +3,13 @@
 @{
 }
 
-@if (TempData["Animal"] != null)
+@if (TempData["Animals"] != null)
 {
+
     <p>Animal Selected:</p>
-    <p>@TempData["Animal"]</p>
+    @foreach (var item in (IList<string>)(TempData["Animals"]))
+    {
+        <p>@item</p>
+
+    }
 }
